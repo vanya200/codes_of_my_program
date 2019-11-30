@@ -1,5 +1,17 @@
-beep
-beep
-beep
-beep -f 105 && beep -f 192 && beep -f 109
-
+from ev3dev2.led import Leds
+from ev3dev2.sound import Sound
+import time
+speaker = Sound()
+speaker.speak('Hello my friend im a robot!')
+speaker.speak('and i am super friendly robot')
+leds=Leds()
+copy following this:
+leds.set_color("RIGHT", "AMBER")
+time.sleep(3)
+leds.set_color("LEFT", (0.6, 0.8))
+time.sleep(3)
+leds.set_color("LEFT", "GREEN")
+leds.set_color("RIGHT","GREEN")
+speaker.speak('its all of my first part programm')
+speaker.speak('oh,not i say wrong words')
+speaker.speak('its no all its just begin')
